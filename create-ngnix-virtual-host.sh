@@ -25,3 +25,5 @@ cp ${BASEDIR}/templates/virtual-host.conf /etc/nginx/sites-available/${1}
 
 sed -i "s/%domain%/${1}/g" /etc/nginx/sites-available/${1}
 sed -i "s/%port%/${2}/g" /etc/nginx/sites-available/${1}
+
+ln -s /etc/nginx/sites-available/${1} /etc/nginx/sites-enabled/${1}
