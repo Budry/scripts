@@ -21,4 +21,4 @@ fi
 
 docker stop $1
 docker rmi $1 -f
-docker run -d -p $3 --name $1 $1
+docker run -d -p $2 --name $1 $1
