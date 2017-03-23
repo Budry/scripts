@@ -10,4 +10,4 @@ if [ -z "$1" ]
     exit;
 fi
 
-certbot certonly --webroot -w /var/www/well-known "${@}"
+certbot certonly --webroot -w /var/www/well-known "${@}" --rsa-key-size 4096
